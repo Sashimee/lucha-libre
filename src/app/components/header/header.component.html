@@ -1,9 +1,10 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a [routerLink]="['/dashboard']" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-            <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
+            <li><a [routerLink]="['/dashboard']"><i class="material-icons left">home</i>Home</a></li>
+            <li><a [routerLink]="['/match-calendar']"><i class="material-icons left">perm_contact_calendar</i>Calendar</a></li>
+            <li><a [routerLink]="['/wreslers-list']"><i class="material-icons left">perm_identity</i>Champions</a></li>
         </ul>
     </div>
 </nav>

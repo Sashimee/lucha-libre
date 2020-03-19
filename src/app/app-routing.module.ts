@@ -40,7 +40,7 @@ const routes: Routes = [
     component: PageWreslerDetailsComponent
   },
   {
-    path: 'wresler-list',
+    path: 'wreslers-list',
     component: PageWreslersListComponent
   },
 ];
