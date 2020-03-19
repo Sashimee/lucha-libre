@@ -1,41 +1,77 @@
-<!-- <div class="container">
+<div class="container">
   <h1 class="center">Home</h1>
-  <div>
-    <h2>Upcoming matches</h2>
-    <div class="row">
-      <div class="col s12 m5" *ngFor="let m of matchList">
+  <div class="center">
+    <h2>Previous matches</h2>
+    <div class="row" *ngFor="let m of matchList">
+      <div
+        class="col s12 m4"
+        [routerLink]="['/wresler-details', matchDetails(m)[0].wreslerId]"
+      >
         <div class="card">
           <div class="card-image">
             <img
-              [routerLink]="['/wresler-details', wresler.wreslerId]"
-              src="../../services/data.ts/../{{ wresler.image }}"
+              src="../../services/data.ts/../{{ matchDetails(m)[0].image }}  "
             />
-            <span class="card-title">{{ wresler.name | uppercase }}</span>
+            <span class="card-title"> {{ matchDetails(m)[0].name }}</span>
             <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"
               ><i class="material-icons">add</i></a
-            > -->
-          </div>
-          <div class="card-content">
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                [routerLink]="['/wresler-details', wresler.wreslerId]"
-                src="../../services/data.ts/../{{ wresler.image }}"
-              />
-              <span class="card-title">{{ wresler.name | uppercase }}</span>
-              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"
-                ><i class="material-icons">add</i></a
               > -->
-            </div>
-            <div class="card-content">
-            </div>
+          </div>
+        </div>
+      </div>
+      <div [routerLink]="['/match-details', m.matchId]">
+        <div class="col s12 m1 red side valign-wrapper center-align">
+          <h1>{{ m.score1 }}</h1>
+        </div>
+
+        <div class="col s12 m2 ">
+          <h1 class="orange center VS">
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+            <br />
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+            <br />
+
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+            <br />
+
+            VS
+            <br />
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+            <br />
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+            <br />
+            <i class="red-text fab fa-hotjar"></i>
+            <i class="red-text fab fa-hotjar"></i>
+          </h1>
+        </div>
+        <div class="col s12 m1 red side valign-wrapper center-align">
+          <h1>
+            {{ m.score2 }}
+          </h1>
+        </div>
+      </div>
+
+      <div
+        class="col s12 m4"
+        [routerLink]="['/wresler-details', matchDetails(m)[1].wreslerId]"
+      >
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="../../services/data.ts/../{{ matchDetails(m)[1].image }}  "
+            />
+            <span class="card-title"> {{ matchDetails(m)[1].name }}</span>
+            <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"
+              ><i class="material-icons">add</i></a
+              > -->
+          </div>
         </div>
       </div>
     </div>
-
   </div>
-
-
-
-</div> -->
+</div>

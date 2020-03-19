@@ -23,7 +23,7 @@ const routes: Routes = [
     component: PageMatchCalendarComponent
   },
   {
-    path: "match-details",
+    path: "match-details/:matchId",
     component: PageMatchDetailsComponent
   },
   {
@@ -48,4 +48,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
