@@ -1,1 +1,32 @@
-<p>page-wreslers-list works!</p>
+<div class="container">
+  <h1>Our specimen</h1>
+  <table class="highlight">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th><i class="red-text fab fa-hotjar"></i> Special Move</th>
+        <th>Rent Price</th>
+        <th>Debut</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let wresler of wreslerList">
+        <td>
+          <a [routerLink]="['/wresler-details', wresler.name]">{{
+            wresler.name | uppercase
+          }}</a>
+        </td>
+
+        <td>{{ wresler.specialMove }}</td>
+
+        <td>
+          {{ wresler.rentPrice | currency: "EUR":true }}
+        </td>
+        <td>
+          {{ wresler.debut }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
