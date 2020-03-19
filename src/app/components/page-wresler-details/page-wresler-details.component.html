@@ -1,5 +1,11 @@
-// ng if pour le loading dans div
-
+<!--ng if pour le loading dans div-->
 <div *ngIf="myWresler">
-    <p>{{myWresler.name}}</p>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <img src="{{myWresler.image}}" alt="{{myWresler.name}}" class="z-depth-3">
+            </div>
+            <p>{{myWresler.name}}</p>
+        </div>
+    </div>
 </div>
