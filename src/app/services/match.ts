@@ -5,7 +5,8 @@ export const matchArray = [
     wresler2: 2,
     matchId: 1,
     score1: 2,
-    score2: 3
+    score2: 3,
+    image: "../assets/wreslers-match/match1.jfif"
   },
   {
     date: "14/04/2020",
@@ -13,7 +14,8 @@ export const matchArray = [
     wresler2: 11,
     matchId: 2,
     score1: 2,
-    score2: 3
+    score2: 3,
+    image: "../assets/wreslers-match/match2.jfif"
   },
   {
     date: "15/04/2020",
@@ -21,6 +23,7 @@ export const matchArray = [
     wresler2: 7,
     matchId: 3,
     score1: 2,
-    score2: 3
+    score2: 3,
+    image: "../assets/wreslers-match/match3.jfif"
   }
 ];
