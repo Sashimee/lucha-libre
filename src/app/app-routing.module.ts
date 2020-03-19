@@ -36,7 +36,7 @@ const routes: Routes = [
     component: PageRentWreslerComponent
   },
   {
-    path: 'wresler-details',
+    path: 'wresler-details/:id',
     component: PageWreslerDetailsComponent
   },
   {
