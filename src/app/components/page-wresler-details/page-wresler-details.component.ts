@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { wreslerArray } from "../../services/data";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: "app-page-wresler-details",
@@ -7,7 +8,13 @@ import { wreslerArray } from "../../services/data";
   styleUrls: ["./page-wresler-details.component.css"]
 })
 export class PageWreslerDetailsComponent implements OnInit {
-  constructor() {}
+  myWresler;
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      const capturedId = params.get('wreslerId');
+      this.myWresler = wreslerArray.filter(w => w.wreslerId === capturedId)[0];
+    })
+  }
 }
