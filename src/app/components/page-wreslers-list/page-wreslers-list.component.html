@@ -3,7 +3,7 @@
     <div class="col s12 m6">
       <div class="card" *ngFor="let wresler of wreslerList">
         <div class="card-image">
-          <img src="../../services/data.ts/wresler" />
+          <img src="../../services/data.ts/../{{ wresler.image }}" />
           <span class="card-title">{{ wresler.name | uppercase }}</span>
           <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"
             ><i class="material-icons">add</i></a
