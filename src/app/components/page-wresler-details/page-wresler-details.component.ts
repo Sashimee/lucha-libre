@@ -8,13 +8,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ["./page-wresler-details.component.css"]
 })
 export class PageWreslerDetailsComponent implements OnInit {
-  myWresler = [];
+  myWresler;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
-      const capturedId = +params.get('id');
-      this.myWresler = this.
+      const capturedId = params.get('wreslerId');
+      this.myWresler = wreslerArray.filter(w => w.wreslerId === capturedId)[0];
     })
   }
 }
