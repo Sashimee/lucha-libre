@@ -95,7 +95,7 @@ export const wreslerArray = [
     weight: 95,
     debut: 1934,
     rentPrice: 12010,
-    specialMove: "Triple Back front double flip kick jump",
+    specialMove: "Triple Back front flip kick jump",
     image: "../assets/wreslers/330px-El_Santo_statue.jpg",
     wreslerId: "9"
   },
