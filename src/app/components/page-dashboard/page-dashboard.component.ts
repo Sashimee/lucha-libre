@@ -15,8 +15,6 @@ export class PageDashboardComponent implements OnInit {
   constructor(public m: MatchService, public wres: WreslerService) {}
 
   matchDetails(match) {
-    const wrestler1 = this.m.getMatchInfo(match.matchId)[0];
-    const wrestler2 = this.m.getMatchInfo(match.matchId)[1];
     return this.m.getMatchInfo(match.matchId);
   }
 

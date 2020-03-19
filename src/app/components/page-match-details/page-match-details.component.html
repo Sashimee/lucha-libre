@@ -1,5 +1,24 @@
 <div class="container">
-  <div *ngIf="specificMatch">
-    <h1 class="center">Match details</h1>
+  <div *ngIf="specificMatch" class="row">
+    <h1 class="center">
+      <i class="red-text fab fa-hotjar"></i
+      ><i class="red-text fab fa-hotjar"></i
+      ><i class="red-text fab fa-hotjar"></i>Witness DESTRUCTION
+      <i class="red-text fab fa-hotjar"></i
+      ><i class="red-text fab fa-hotjar"></i
+      ><i class="red-text fab fa-hotjar"></i>
+    </h1>
+    <div class="col s2">
+      <h3>{{ player1.name }}</h3>
+    </div>
+    <h1 class="col s1">{{ specificMatch.score1 }}</h1>
+    <div class="center-align col s6">
+      <img src="../../../assets/wreslers-match/{{ specificMatch.image }}" />
+      <h6>{{ specificMatch.date }}</h6>
+    </div>
+    <h1 class="col s1">{{ specificMatch.score2 }}</h1>
+    <div class="col s2">
+      <h3>{{ player2.name }}</h3>
+    </div>
   </div>
 </div>

@@ -19,4 +19,7 @@ export class MatchService {
       this.wres.getWrestlerInfo(player2)
     ]);
   }
+  matchDetails(match) {
+    return this.getMatchInfo(match.matchId);
+  }
 }
