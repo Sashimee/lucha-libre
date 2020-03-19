@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "lucha-libre": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lucha-libre"
+    }
+  },
+  "defaultProject": "lucha-libre",
+  "cli": {
+    "analytics": "2be0d8d6-ddc2-4628-b787-b0cce469b339"
+  }
 }
