@@ -7,6 +7,7 @@ export const wreslerArray = [
     debut: 1987,
     rentPrice: 0,
     specialMove: "Flamme Thrower",
+    image: "../assets/wreslers/Abismo_Negro_En_Mexicali.JPG",
     wreslerId: "1"
   }
 ];
