@@ -12,7 +12,10 @@
     <div class="col s12 m4" *ngFor="let wresler of wreslerList">
       <div class="card">
         <div class="card-image">
-          <img src="../../services/data.ts/../{{ wresler.image }}" />
+          <img
+            [routerLink]="['/wresler-details', wresler.wreslerId]"
+            src="../../services/data.ts/../{{ wresler.image }}"
+          />
           <span class="card-title">{{ wresler.name | uppercase }}</span>
           <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"
             ><i class="material-icons">add</i></a
